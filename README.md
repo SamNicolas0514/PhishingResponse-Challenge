@@ -39,7 +39,7 @@ The project consists of Categorizing Phishing Emails and manual Artifact Extract
 
  ![image](https://github.com/abdullaah019/Phishing-Analysis/assets/139023222/6c623a2c-60f5-466b-ad56-92f01999cefc)
 
- <p> This email is the subject line which creates a sense of urgency, which is often utilized by malicious emails. We also notice that this email has an attachment which we should be careful with, in case it is actually malicious. The sending address is a Gmail address, which is very suspicious considering it is claiming to be from the ‘Finance and Collection Department’ of a company. Based on the information provided, this is a malicious attachment email, where the email recipient is being convinced to open the attached docx file (which could contain malicious macros or a link to a malicious website) by claiming there will be financial consequences to the company.![image](https://github.com/abdullaah019/Phishing-Analysis/assets/139023222/41b4b9ae-4e63-405e-9ee4-dd5f139e35dd)
+ <p> This email is the subject line which creates a sense of urgency, which is often utilized by malicious emails. We also notice that this email has an attachment which we should be careful with, in case it is actually malicious. The sending address is a Gmail address, which is very suspicious considering it is claiming to be from the ‘Finance and Collection Department’ of a company. Based on the information provided, this is a malicious attachment email, where the email recipient is being convinced to open the attached docx file (which could contain malicious macros or a link to a malicious website) by claiming there will be financial consequences to the company.
 /b>
 
 
@@ -103,7 +103,6 @@ The easiest way to retrieve this artifact is to (carefully) right-click the hype
 How to find the root domain of the URL?
 To find this we can either right-click the link in the email and select ‘copy link location’ and paste it into a program such as Notepad to see the URL text, or search for ‘http’ or ‘https’ in the email file until we find the right link. The ‘root domain’ essentially means the domain name of the URL, not including the specific resource. For this email, the URL is hxxps://www.thiswouldbeamalicioussite.com/index/2020/j411/NetflixLogin.php? (we're replaced https with hxxps to stop it from becoming hyperlinked), so the root domain is ‘thiswouldbeamalicioussite.com’.
  
-    ![image](https://github.com/abdullaah019/Phishing-Analysis/assets/139023222/928b0e50-0718-4f64-bcc9-822d8f913ab2)
 
  
  
@@ -174,7 +173,6 @@ How to find the MD5 and SHA256 hashes of the attached file? (Format: MD5 SHA256)
 Open PowerShell window and use the Get-FileHash cmdlet to retrieve the MD5 and SHA256 hashes. As SHA256 is the default hashing algorithm we don't need to state it, however we must do this for MD5.
  
  
-![image](https://github.com/abdullaah019/Phishing-Analysis/assets/139023222/e8566643-e3d1-46bb-b675-ac2bcc0a9509)
 
 
 <!--
